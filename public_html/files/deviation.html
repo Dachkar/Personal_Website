@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style media="screen">
+      a{
+        text-decoration: underline;
+        color: #000;
+      }
+      a:hover{
+        color: grey;
+        text-decoration: overline;
+      }
+    </style>
+    <meta charset="utf-8">
+    <title>Deviation</title>
+    <link rel="stylesheet" href="deviation.css">
+    <link rel="stylesheet" href="dygraph.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.js"></script>
+  </head>
+  <body>
+    <p class="signtre"><a href="http://www.acsu.buffalo.edu/~dachkar">Home</a></p>
+    <div class="centerBlock">
+        <div id="mygraph" >
+
+        </div>
+    </div>
+    <script type="text/javascript">
+    g = new Dygraph(
+  document.getElementById("mygraph"),
+  // For possible data formats, see http://dygraphs.com/data.html
+  // The x-values could also be dates, e.g. "2012/03/15"
+  'deviations.csv',
+  {
+    // options go here. See http://dygraphs.com/options.html
+    legend: 'follow',
+    ylabel: 'Level deviation(in)',
+    xlabel: 'Date',
+    title: 'Erie water level daily deviation:',
+    drawPoints: 'True'
+  });
+    </script>
+    <p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+	</a>
+</p>
+  </body>
+</html>

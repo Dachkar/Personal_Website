@@ -1,0 +1,19 @@
+{
+  "logger": {
+    "title": "Remote Sync"
+  },
+  "uploadOnSave": true,
+  "useAtomicWrites": false,
+  "deleteLocal": false,
+  "hostname": "ubunix.buffalo.edu",
+  "port": "22",
+  "ignore": [
+    ".remote-sync.json",
+    ".git/**"
+  ],
+  "username": "dachkar",
+  "password": "@Abc30374748",
+  "watch": [],
+  "transport": "scp",
+  "target": "/ubfs/myfiles/d/.windows/a/dachkar/public_html"
+}

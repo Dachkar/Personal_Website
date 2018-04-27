@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+  <link rel="stylesheet" href="../Assignment_8/form.css">
+  <style>
+  .move {
+    color: black;
+    font-size: 50px;
+    white-space: nowrap;
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);
+    transform:translateX(100%);
+
+    -moz-animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    animation: scroll 10s linear infinite;
+  }
+  @-moz-keyframes scroll {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll {
+    0%	{
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+
+  </style>
+</head>
+<body>
+  <p class="center"><a href="http://www.acsu.buffalo.edu/~dachkar/MFC215/index.html">Home</a></p>
+  <p class="center"><a href="http://www.acsu.buffalo.edu/~dachkar/MFC215/Assignment_9/multimedia.html">Multimedia</a></p>
+
+  <div class="move">
+    <p>--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--</p>
+    <h1>This text is moving sideways</h1>
+    <p>--_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_--</p>
+  </div>
+  <p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+	</a>
+</p>
+</body>
+</html>

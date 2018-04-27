@@ -1,0 +1,21 @@
+body {
+color:#000;
+background-color:#4286f4;
+font-family: Helvetica, sans-serif;
+font-size: 20px;
+font-weight: bold;
+}
+hr{
+  border: 3px #FFFFFF doted;
+}
+table {
+  color: #1d2463;
+  font-family: arial, sans-serif;
+}
+
+td, th {
+  border: 2px solid #000000;
+  text-align: center;
+  padding: 3px;
+
+}

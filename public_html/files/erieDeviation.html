@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Deviation Graph</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/dygraph/2.1.0/dygraph.min.js"></script>
+  </head>
+  <body>
+    <div id="mygraph">
+
+    </div>
+    <script type="text/javascript">
+    g = new Dygraph(
+  document.getElementById("mygraph"),
+  // For possible data formats, see http://dygraphs.com/data.html
+  // The x-values could also be dates, e.g. "2012/03/15"
+  'deviation.csv',
+  {
+    // options go here. See http://dygraphs.com/options.html
+    legend: 'always',
+    title: 'dygraphs chart template'
+  });
+    </script>
+  </body>
+</html>

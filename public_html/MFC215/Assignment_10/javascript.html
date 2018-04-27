@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="form.css">
+    <title>Javascript Web Page</title>
+  </head>
+  <body>
+    <p class="signtre"><a href="http://www.acsu.buffalo.edu/~dachkar/MFC215/index.html">Home</a></p>
+    <div class="centerBlock">
+      <p><b>Current date and time:</b></p>
+      <script>
+        var date = new Date();
+        document.write(date);
+        document.write("<hr>");
+      </script>
+      <script>
+        var dueDate = new Date("April 22, 2018");
+        if(date < dueDate){
+          document.write("<b>Days left until assignment is due: </b>", "<br>", Math.round((dueDate.getTime() - date.getTime())/(1000*3600*24)));
+        }
+        else{
+          document.write("<b>Days past since Assignment was due: </b>", "<br>", Math.round((date.getTime() - dueDate.getTime())/(1000*3600*24)));
+        }
+        document.write("<hr>")
+
+        var monthAndDays = [["January",31],["February",28],["March",31],["April",30], ["May",31],["June",30],["July",31],["August",31],["September",30 ],["October",31],
+        ["November",30],["December",31]];
+        document.write("<table><tr><th>Month Number</th><th>Month</th><th>Total days in Month</th></tr>");
+        for (var i = 0; i < 12; i++) {
+          if (i%2 == 0) {
+            //adding /" to represent quotes inside string
+            document.write("<tr class = \"even\">");
+            document.write("<td>" + (i+1) + "</td><td>"	+ monthAndDays[i][0] + "</td><td>" + monthAndDays[i][1] + "</td></tr>");
+          }
+          else{
+            document.write("<tr class = \"odd\">");
+            document.write("<td>" + (i+1) + "</td><td>"	+ monthAndDays[i][0] + "</td><td>" + monthAndDays[i][1] + "</td></tr>");
+          }
+        }
+        document.write("</table>")
+      </script>
+    </div>
+    <p>
+	<a href="http://jigsaw.w3.org/css-validator/check/referer">
+		<img style="border:0;width:88px;height:31px"
+			src="//jigsaw.w3.org/css-validator/images/vcss-blue"
+			alt="Valid CSS!" />
+	</a>
+</p>
+  </body>
+</html>
